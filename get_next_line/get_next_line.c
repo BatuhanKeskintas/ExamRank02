@@ -6,7 +6,7 @@
 /*   By: bkeskint <bkeskint@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 20:57:36 by bkeskint          #+#    #+#             */
-/*   Updated: 2022/02/02 20:59:39 by bkeskint         ###   ########.fr       */
+/*   Updated: 2022/02/02 21:02:59 by bkeskint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,8 +53,8 @@ int main(void)
 	// int		fd2;
 	char	*str;
 
-	fd = open("/Users/batuhankeskintas/42/42Projects/ExamRank02/rendu/GNL/text", O_RDONLY);
-	// fd2 = open("/Users/batuhankeskintas/42Projects/eval_gnl/42_with_nl", O_RDONLY);
+	//fd = open("GiveHereFilePATH", O_RDONLY);
+	// fd2 = open("GiveHereFilePATH", O_RDONLY);
 	for (size_t i = 0; i < 10; i++)
     {
         str = get_next_line(fd);
