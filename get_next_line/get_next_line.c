@@ -6,7 +6,7 @@
 /*   By: bkeskint <bkeskint@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/02 20:57:36 by bkeskint          #+#    #+#             */
-/*   Updated: 2022/02/02 21:02:59 by bkeskint         ###   ########.fr       */
+/*   Updated: 2022/02/12 16:10:50 by bkeskint         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ char	*get_next_line(int fd)
 	while ((rd = read(fd, &c, 1) > 0))
 	{
 		buffer[i] = c;
-		i++;
 		if (c == '\n')
 			break;
+		i++;
 	}
 	if ((!buffer[i - 1] && !rd) || rd == -1)
 	{
@@ -53,7 +53,7 @@ int main(void)
 	// int		fd2;
 	char	*str;
 
-	//fd = open("GiveHereFilePATH", O_RDONLY);
+	// fd = open("GiveHereFilePATH", O_RDONLY);
 	// fd2 = open("GiveHereFilePATH", O_RDONLY);
 	for (size_t i = 0; i < 10; i++)
     {
